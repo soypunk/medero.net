@@ -1,0 +1,14 @@
+<li>
+    <h2>{{.Title}}</h2>
+    <p>
+    {{with .Post.Params.twitter}}
+    https://twitter.com/{{.}}
+    {{end}}
+    {{with .Post.Params.facebook}}
+    https://www.facebook.com/{{.}}
+    {{end}}
+    {{with .Post.Params.instagram}}
+    https://instagram.com/{{.}}
+    {{end}}
+    </p>
+</li>

@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
         {{ template "_internal/google_analytics.html" . }}
+        <script src="https://use.fontawesome.com/581dd76fd1.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     </head>
-    <body class="bg-white">
+    <body class="bg-white ">
         <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
         {{ block "header" . }}
                 {{ partial "header.html" . }}

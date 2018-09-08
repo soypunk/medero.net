@@ -4,4 +4,11 @@
     <p>{{.}}</p>
 </section>    
 {{end}}
+
+<ul class="list pl0">
+    {{ range .Pages }}
+        {{ .Render "li" }}
+    {{ end }}
+</ul>
+
 {{end}}
