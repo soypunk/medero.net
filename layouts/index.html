@@ -7,7 +7,7 @@
 
 <ul class="list pl0">
     {{ range (where .Site.Pages "Section" "in" (slice "family")) }}
-        {{ .Render "li" }}
+        <li>{{ .Title }}</li>
     {{ end }}
 </ul>
 
