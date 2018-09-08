@@ -3,4 +3,15 @@
     <div class="lh-copy">
     {{ .Content }}
     </div>
+    <p>    
+    {{with .Params.twitter}}
+    https://twitter.com/{{.}}
+    {{end}}
+    {{with .Params.facebook}}
+    https://www.facebook.com/{{.}}
+    {{end}}
+    {{with .Params.instagram}}
+    https://instagram.com/{{.}}
+    {{end}}
+    </p>
 </li>
