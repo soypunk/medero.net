@@ -1,4 +1,9 @@
-baseURL = "https://medero.net/"
+baseURL = "/"
 languageCode = "en-us"
 title = "The Mederos"
 theme = "ananke"
+googleAnaltytics = "UA-404975-5"
+
+[params]
+  domain_name = "medero.net"
+  description = ""
