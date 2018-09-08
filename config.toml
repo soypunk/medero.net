@@ -2,6 +2,8 @@ baseURL = "/"
 languageCode = "en-us"
 title = "The Mederos"
 googleAnaltytics = "UA-404975-5"
+canonifyurls = false
+pluralizeListTitles = false
 
 [params]
   domain_name = "medero.net"
