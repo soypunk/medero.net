@@ -1,13 +1,16 @@
 <li>
-    <h2>{{.Title}}</h2>
-    <p>
-    {{with .Post.Params.twitter}}
+    <h2>{{ .Title }}</h2>
+    <div class="lh-copy">
+    {{ .Content }}
+    </div>
+    <p>    
+    {{with .Params.twitter}}
     https://twitter.com/{{.}}
     {{end}}
-    {{with .Post.Params.facebook}}
+    {{with .Params.facebook}}
     https://www.facebook.com/{{.}}
     {{end}}
-    {{with .Post.Params.instagram}}
+    {{with .Params.instagram}}
     https://instagram.com/{{.}}
     {{end}}
     </p>
