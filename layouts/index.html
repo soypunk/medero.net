@@ -6,7 +6,7 @@
 {{end}}
 
 <ul class="list pl0">
-    {{ range .Data.Pages }}
+    {{ range first 5 (where .Data.Pages "Section" in (slice "family")) }}
         {{ .Render "li" }}
     {{ end }}
 </ul>
