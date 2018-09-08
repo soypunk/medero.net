@@ -1,8 +1,10 @@
 <li>
     <h2>{{ .Title }}</h2>
+    {{ with .Content }}
     <div class="lh-copy">
-    {{ .Content }}
+    {{.}}
     </div>
+    {{ end }}
     <p>    
     {{with .Params.twitter}}
     https://twitter.com/{{.}}
