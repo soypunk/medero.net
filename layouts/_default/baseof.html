@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ block "title" . }}{{ with .Title }}{{ Title }} - {{ end }} {{ .Site.Title }}{{ end }}</title>
+        <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }} {{ .Site.Title }}{{ end }}</title>
         {{ template "_internal/google_analytics.html" . }}
         <script src="https://use.fontawesome.com/581dd76fd1.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
