@@ -7,16 +7,16 @@
     {{ end }}
     <ul class="list">
         {{with .Params.website}}
-        <li><a class="link dim" href="{{.}}" title="website"><i class="fa fa-globe fa-fw" aria-hidden="true"></i> {{.}}</a></li>
+        <li><a class="link blue dim" href="{{.}}" title="website"><i class="fa fa-globe fa-fw" aria-hidden="true"></i> {{.}}</a></li>
         {{end}}
         {{with .Params.twitter}}
-        <li><a class="link dim" href="https://twitter.com/{{.}}" title="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> {{.}}</a></li>
+        <li><a class="link blue dim" href="https://twitter.com/{{.}}" title="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> https://twitter.com/<strong>{{.}}</strong></a></li>
         {{end}}
         {{with .Params.facebook}}
-        <li><a class="link dim" href="https://www.facebook.com/{{.}}" title="facebook"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i> {{.}}</a></li>
+        <li><a class="link blue dim" href="https://www.facebook.com/{{.}}" title="facebook"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i> https://www.facebook.com/<strong>{{.}}</strong></a></li>
         {{end}}
         {{with .Params.instagram}}
-        <li><a class="link dim" href="https://instagram.com/{{.}}" title="instagram"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i> {{.}}</a></li>
+        <li><a class="link blue dim" href="https://instagram.com/{{.}}" title="instagram"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i> https://instagram.com/<strong>{{.}}</strong></a></li>
         {{end}}
     </ul>
 </li>
