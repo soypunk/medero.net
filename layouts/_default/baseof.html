@@ -7,8 +7,29 @@
         {{ template "_internal/google_analytics.html" . }}
         <script src="https://use.fontawesome.com/581dd76fd1.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+        <style type="text/css">
+        body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+                -moz-animation: none !important;
+                -webkit-animation: none !important;
+                -ms-animation: none !important;
+                animation: none !important;
+                -moz-transition: none !important;
+                -webkit-transition: none !important;
+                -ms-transition: none !important;
+                transition: none !important;
+        }
+        </style>
+        <noscript>
+        body.is-preload .tiles {
+                -moz-transform: none;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+                opacity: 1;
+        }        
+        </noscript>
     </head>
-    <body class="bg-white sans-serif">
+    <body class="bg-white sans-serif preload">
         <a class="clip" href="#main">Skip to main content</a>
         {{ block "header" . }}
                 {{ partial "header.html" . }}
@@ -22,5 +43,6 @@
         {{ block "footer" . }}
                 {{ partial "footer.html" . }}    
         {{ end }}
+        <script src="/js/main.js"></script>
     </body>
 </html>
