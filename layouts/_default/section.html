@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ range .Data.Pages.GroupByDate "2006" }}
+            <h2>{{ .Key }}</h2>
+            <ul class="list pl0">
+            {{ range .Pages }}
+                        {{ .Render "li"}}
+            {{ end }}
+            </ul>
+{{ end }}
+{{ end }}

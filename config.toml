@@ -4,6 +4,7 @@ title = "The Mederos"
 googleAnaltytics = "UA-404975-5"
 canonifyurls = false
 pluralizeListTitles = false
+disableKinds = ["taxonomy","taxonomyTerm"]
 
 [params]
   domain_name = "medero.net"
