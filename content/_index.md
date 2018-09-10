@@ -5,4 +5,6 @@ date: "2018-09-08"
 type: "page"
 ---
 
-We're a family of five living in Southern California. Some of us have presences on the Web & elsewhere:
+<h2 class="f1 lh-title">We're a family of five living in Southern California.</h2>
+
+Some of us have presences on the Web & elsewhere:
