@@ -1,4 +1,5 @@
 var domReadyCallback = function(){
+  console.log('dom ready!');
   document.body.classList.remove("preload");
 };
 
