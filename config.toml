@@ -9,3 +9,7 @@ disableKinds = ["taxonomy","taxonomyTerm"]
 [params]
   domain_name = "medero.net"
   description = ""
+  
+[permalinks]
+	pages = "/pages/:slug"
+	family = "/family/:slug"
