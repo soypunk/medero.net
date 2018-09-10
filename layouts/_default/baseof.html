@@ -8,7 +8,7 @@
         <script src="https://use.fontawesome.com/581dd76fd1.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
         <style type="text/css">
-        body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+        body.preload *, body.preload *:before, body.preload *:after {
                 -moz-animation: none !important;
                 -webkit-animation: none !important;
                 -ms-animation: none !important;
@@ -18,9 +18,13 @@
                 -ms-transition: none !important;
                 transition: none !important;
         }
+        #wrapper {
+                transition: opacity 0.45s ease;
+                opacity: 1;
+        }
         </style>
         <noscript>
-        body.is-preload .tiles {
+        body.preload .tiles {
                 -moz-transform: none;
                 -webkit-transform: none;
                 -ms-transform: none;
@@ -29,20 +33,22 @@
         }        
         </noscript>
     </head>
-    <body class="bg-white sans-serif preload">
-        <a class="clip" href="#main">Skip to main content</a>
-        {{ block "header" . }}
-                {{ partial "header.html" . }}
-        {{ end }}
-        {{ block "menu" . }}
-                {{ partial "menu.html" . }}
-        {{ end }}
-        <main id="main" role="main">
-        {{ block "main" . }}{{ end }}
-        </main>
-        {{ block "footer" . }}
-                {{ partial "footer.html" . }}    
-        {{ end }}
-        <script src="/js/main.js"></script>
-    </body>
+    <body class="sans-serif bg-white graypreload f5 lh-copy">
+                <a class="clip" href="#main">Skip to main content</a>
+                <div id="wrapper" class="mw8 center">
+                                {{ block "header" . }}
+                                {{ partial "header.html" . }}
+                                {{ end }}
+                                {{ block "menu" . }}
+                                {{ partial "menu.html" . }}
+                                {{ end }}
+                                <main id="main" role="main">
+                                {{ block "main" . }}{{ end }}
+                                </main>
+                                {{ block "footer" . }}
+                                {{ partial "footer.html" . }}
+                                {{ end }}
+                </div>
+                <script src="/js/main.js"></script>                
+    </body>    
 </html>

@@ -1,5 +1,5 @@
 var domReadyCallback = function(){
-  document.body.classList.remove("is-preload");
+  document.body.classList.remove("preload");
 };
 
 if (
